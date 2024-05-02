@@ -4,15 +4,15 @@ public class User {
 	private String nom;
 	private String prenom;
 	private String login;
-	
-	public String getLogin() {
-		return login;
-	}
-	public void setLogin(String login) {
-		this.login = login;
-	}
 	private String pass;
 	
+	public User() {
+		this.nom = null;
+		this.prenom = null;
+		this.login = null;
+		this.pass = null;
+	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -30,5 +30,11 @@ public class User {
 	}
 	public void setPass(String pass) {
 		this.pass = pass;
+	}
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
 	}
 }
